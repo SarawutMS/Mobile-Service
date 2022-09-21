@@ -73,9 +73,7 @@
                 <input type="text" class="form-control-plaintext" id="address" placeholder="ที่อยู่">
             </div>
         </div>
-        
         <hr>
-
         <button type="button" class="btn btn-primary"> Save</button>
     </div>
 </template>

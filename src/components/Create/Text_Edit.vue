@@ -8,14 +8,8 @@
 
                         <div class="modal-header ">
                             <slot name="header">
-
                                 ตัวอักษร
-
-
-
                                 <span @click="showModal = false"><i class="bi bi-x-lg text-warning"></i> </span>
-
-
                             </slot>
                         </div>
 

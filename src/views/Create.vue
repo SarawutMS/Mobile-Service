@@ -42,7 +42,6 @@
     </div>
     <div>
         {{text}}
-
     </div>
     <!--  Modal  Line-->
     <Shirt_ChoiceVue :showModal=open_shirt />

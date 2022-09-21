@@ -8,17 +8,10 @@
 
                         <div class="modal-header ">
                             <slot name="header">
-
                                 เลือกแบบเสื้อ
-
-
-
                                 <span @click="showModal = false"><i class="bi bi-x-lg text-warning"></i> </span>
-
-
                             </slot>
                         </div>
-
                         <div class="modal-body ">
                             <slot name="body">
                                 <div class="row my-2 ">
@@ -54,12 +47,9 @@
                                 </div>
                             </slot>
                         </div>
-
                         <div class="modal-footer">
                             <slot name="footer">
-
                             </slot>
-
                         </div>
                     </div>
                 </div>

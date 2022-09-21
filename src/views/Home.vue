@@ -25,7 +25,6 @@
         </div>
         <div class="col">
           <div class="border border-5" style="width: 85px;height: 85px;">
-       
           </div>
         </div>
         <div class="col">
