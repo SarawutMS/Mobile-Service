@@ -8,10 +8,17 @@
 
                         <div class="modal-header ">
                             <slot name="header">
+
                                 เลือกแบบเสื้อ
-                                <span @click="showModal = false"><i class="bi bi-x-lg text-warning"></i> </span>
+
+
+
+                                <span @click="showModal =  onClickClose()"><i class="bi bi-x-lg text-warning"></i> </span>
+
+
                             </slot>
                         </div>
+
                         <div class="modal-body ">
                             <slot name="body">
                                 <div class="row my-2 ">
@@ -40,16 +47,19 @@
                                             <img src="../../assets/img/mens_tank_front.png" width="80" />
                                             <img src="../../assets/img/mens_tank_back.png" width="80" />
                                             <br>
-                                            <small> เสื้อกล้าม </small>
+                                            <small> เสื้อแขนสั้น </small>
                                         </div>
 
                                     </div>
                                 </div>
                             </slot>
                         </div>
+
                         <div class="modal-footer">
                             <slot name="footer">
+
                             </slot>
+
                         </div>
                     </div>
                 </div>
@@ -79,10 +89,12 @@ export default {
 
     },
     methods: {
-        increaseCount(n) {
-            console.log(n)
-            this.count += n
-        }
+
+        onClickClose(event) {
+
+            this.$emit('close', { name: 'this.showLogin', state: false })
+            return false;
+        },
     }
 };
 </script>
