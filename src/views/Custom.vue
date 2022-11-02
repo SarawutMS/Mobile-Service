@@ -14,6 +14,7 @@
   background-attachment: fixed;
   position: relative;
   height: 100vh;
+
   img {
     object-fit: cover;
     height: 100%;

@@ -8,8 +8,14 @@
 
                         <div class="modal-header ">
                             <slot name="header">
+
                                 ตัวอักษร
-                                <span @click="showModal = false"><i class="bi bi-x-lg text-warning"></i> </span>
+
+
+
+                                <span @click="showModal =  onClickClose()"><i class="bi bi-x-lg text-warning"></i> </span>
+
+
                             </slot>
                         </div>
 
@@ -53,11 +59,13 @@ export default {
 
     },
     methods: {
-        increaseCount(n) {
-            console.log(n)
-            this.count += n
+
+        onClickClose(event) {
+
+            this.$emit('close', { name: 'this.showLogin', state: false })
+            return false;
         },
-        
+
     }
 };
 </script>
